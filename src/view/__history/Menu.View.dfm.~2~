@@ -1,0 +1,60 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  ClientHeight = 250
+  ClientWidth = 492
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  Menu = MainMenu1
+  OldCreateOrder = False
+  Position = poDesktopCenter
+  PixelsPerInch = 96
+  TextHeight = 13
+  object MainMenu1: TMainMenu
+    Left = 408
+    Top = 16
+    object Cadastros1: TMenuItem
+      Caption = 'Cadastros'
+      object Fornecedores1: TMenuItem
+        Caption = '-'
+      end
+      object Produtos1: TMenuItem
+        Caption = 'Fornecedores'
+      end
+      object N5: TMenuItem
+        Caption = '-'
+      end
+      object Produtos2: TMenuItem
+        Caption = 'Produtos'
+      end
+    end
+    object N1: TMenuItem
+      Caption = '|'
+    end
+    object Estoque1: TMenuItem
+      Caption = 'Estoque'
+    end
+    object N2: TMenuItem
+      Caption = '|'
+    end
+    object Relatrio1: TMenuItem
+      Caption = 'Movimenta'#231#227'o'
+    end
+    object N3: TMenuItem
+      Caption = '|'
+    end
+    object Relatrio2: TMenuItem
+      Caption = 'Relat'#243'rio'
+    end
+    object N4: TMenuItem
+      Caption = '|'
+    end
+    object Sair1: TMenuItem
+      Caption = 'Sair'
+    end
+  end
+end
