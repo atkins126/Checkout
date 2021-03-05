@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
-  <Transactions>
-    <Transaction>2021/03/04 20:26:59.945,=C:\Users\jrose\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2021/03/04 20:28:57.853,C:\Users\jrose\Documents\Checkout em Delphi.MysQl\Checkout\src\view\Checkout.View.pas=C:\Users\jrose\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2021/03/04 20:28:57.853,C:\Users\jrose\Documents\Checkout em Delphi.MysQl\Checkout\src\view\Checkout.View.dfm=C:\Users\jrose\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
-    <Transaction>2021/03/04 20:29:16.813,C:\Users\jrose\Documents\Checkout em Delphi.MysQl\Checkout\Checkout.dproj=C:\Users\jrose\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
-    <Transaction>2021/03/04 22:31:51.541,=C:\Users\jrose\Documents\Checkout em Delphi.MysQl\Checkout\Unit2.pas</Transaction>
-    <Transaction>2021/03/04 22:32:24.769,C:\Users\jrose\Documents\Checkout em Delphi.MysQl\Checkout\src\view\Menu.View.pas=C:\Users\jrose\Documents\Checkout em Delphi.MysQl\Checkout\Unit2.pas</Transaction>
-    <Transaction>2021/03/04 22:32:24.769,C:\Users\jrose\Documents\Checkout em Delphi.MysQl\Checkout\src\view\Menu.View.dfm=C:\Users\jrose\Documents\Checkout em Delphi.MysQl\Checkout\Unit2.dfm</Transaction>
-    <Transaction>2021/03/04 22:59:40.125,C:\Users\jrose\Documents\Checkout em Delphi.MysQl\Checkout\src\view\Checkout.Menu.View.pas=C:\Users\jrose\Documents\Checkout em Delphi.MysQl\Checkout\src\view\Menu.View.pas</Transaction>
-    <Transaction>2021/03/04 22:59:40.125,C:\Users\jrose\Documents\Checkout em Delphi.MysQl\Checkout\src\view\Checkout.Menu.View.dfm=C:\Users\jrose\Documents\Checkout em Delphi.MysQl\Checkout\src\view\Menu.View.dfm</Transaction>
-    <Transaction>2021/03/04 22:59:48.832,=C:\Users\jrose\Documents\Checkout em Delphi.MysQl\Checkout\Unit1.pas</Transaction>
-    <Transaction>2021/03/04 23:00:27.062,C:\Users\jrose\Documents\Checkout em Delphi.MysQl\Checkout\src\view\Checkout.CadastroDeUsuarios.View.pas=C:\Users\jrose\Documents\Checkout em Delphi.MysQl\Checkout\Unit1.pas</Transaction>
-    <Transaction>2021/03/04 23:00:27.062,C:\Users\jrose\Documents\Checkout em Delphi.MysQl\Checkout\src\view\Checkout.CadastroDeUsuarios.View.dfm=C:\Users\jrose\Documents\Checkout em Delphi.MysQl\Checkout\Unit1.dfm</Transaction>
+	<Transactions>
+    <Transaction>2021/03/04 20:26:59.000.945,=C:\Users\jrose\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/03/04 20:28:57.000.853,C:\Users\jrose\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\jrose\Documents\Checkout em Delphi.MysQl\Checkout\src\view\Checkout.View.pas</Transaction>
+    <Transaction>2021/03/04 20:28:57.000.853,C:\Users\jrose\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\jrose\Documents\Checkout em Delphi.MysQl\Checkout\src\view\Checkout.View.dfm</Transaction>
+    <Transaction>2021/03/04 20:29:16.000.813,C:\Users\jrose\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\jrose\Documents\Checkout em Delphi.MysQl\Checkout\Checkout.dproj</Transaction>
+    <Transaction>2021/03/04 22:31:51.000.541,=C:\Users\jrose\Documents\Checkout em Delphi.MysQl\Checkout\Unit2.pas</Transaction>
+    <Transaction>2021/03/04 22:32:24.000.769,C:\Users\jrose\Documents\Checkout em Delphi.MysQl\Checkout\Unit2.pas=C:\Users\jrose\Documents\Checkout em Delphi.MysQl\Checkout\src\view\Menu.View.pas</Transaction>
+    <Transaction>2021/03/04 22:32:24.000.769,C:\Users\jrose\Documents\Checkout em Delphi.MysQl\Checkout\Unit2.dfm=C:\Users\jrose\Documents\Checkout em Delphi.MysQl\Checkout\src\view\Menu.View.dfm</Transaction>
+    <Transaction>2021/03/04 22:59:40.000.125,C:\Users\jrose\Documents\Checkout em Delphi.MysQl\Checkout\src\view\Menu.View.pas=C:\Users\jrose\Documents\Checkout em Delphi.MysQl\Checkout\src\view\Checkout.Menu.View.pas</Transaction>
+    <Transaction>2021/03/04 22:59:40.000.125,C:\Users\jrose\Documents\Checkout em Delphi.MysQl\Checkout\src\view\Menu.View.dfm=C:\Users\jrose\Documents\Checkout em Delphi.MysQl\Checkout\src\view\Checkout.Menu.View.dfm</Transaction>
+    <Transaction>2021/03/04 22:59:48.000.832,=C:\Users\jrose\Documents\Checkout em Delphi.MysQl\Checkout\Unit1.pas</Transaction>
+    <Transaction>2021/03/04 23:00:27.000.062,C:\Users\jrose\Documents\Checkout em Delphi.MysQl\Checkout\Unit1.dfm=C:\Users\jrose\Documents\Checkout em Delphi.MysQl\Checkout\src\view\Checkout.CadastroDeUsuarios.View.dfm</Transaction>
+    <Transaction>2021/03/04 23:00:27.000.062,C:\Users\jrose\Documents\Checkout em Delphi.MysQl\Checkout\Unit1.pas=C:\Users\jrose\Documents\Checkout em Delphi.MysQl\Checkout\src\view\Checkout.CadastroDeUsuarios.View.pas</Transaction>
   </Transactions>
 </BorlandProject>

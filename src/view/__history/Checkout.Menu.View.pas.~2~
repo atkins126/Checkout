@@ -26,7 +26,6 @@ type
     N6: TMenuItem;
     Produt1: TMenuItem;
     procedure Sair1Click(Sender: TObject);
-    procedure Produtos1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -39,19 +38,6 @@ var
 implementation
 
 {$R *.dfm}
-
-uses Checkout.CadastroDeUsuarios.View;
-
-procedure TFrmMenu.Produtos1Click(Sender: TObject);
-begin
-  FrmCadastroDeUsuarios := TFrmCadastroDeUsuarios.Create(nil);
-  try
-    FrmCadastroDeUsuarios.ShowModal;
-  finally
-    FrmCadastroDeUsuarios.Free;
-
-  end;
-end;
 
 procedure TFrmMenu.Sair1Click(Sender: TObject);
 begin

@@ -38,7 +38,6 @@ object FrmCadastroDeUsuarios: TFrmCadastroDeUsuarios
         Top = 32
         Width = 257
         Height = 21
-        Color = clBtnFace
         TabOrder = 0
       end
       object EDT_ENDERECO: TEdit

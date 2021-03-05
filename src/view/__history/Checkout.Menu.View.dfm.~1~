@@ -368,7 +368,6 @@ object FrmMenu: TFrmMenu
       end
       object Produtos1: TMenuItem
         Caption = 'Usu'#225'rios'
-        OnClick = Produtos1Click
       end
       object N5: TMenuItem
         Caption = '-'
