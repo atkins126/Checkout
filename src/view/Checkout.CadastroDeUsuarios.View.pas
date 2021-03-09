@@ -23,6 +23,9 @@ type
     ComboBox1: TComboBox;
     CB_NOME: TCheckBox;
     CB_CPF: TCheckBox;
+    SB_SALVAR: TSpeedButton;
+    SB_EDITAR: TSpeedButton;
+    SB_DELETAR: TSpeedButton;
   private
     { Private declarations }
   public

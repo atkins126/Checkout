@@ -1,0 +1,26 @@
+unit AssociacaoDeCampos.Controller;
+
+interface
+
+type
+  TAssociacao = class
+  private
+  public
+procedure CamposAssociados;
+  end;
+
+implementation
+
+{ TAssociacao }
+
+uses model.Checkout.Conexao;
+
+procedure TAssociacao.CamposAssociados;
+begin
+  with modelCheckout do
+  begin
+    FDT_CARGOS.FieldByName('ID').Value
+  end;
+end;
+
+end.

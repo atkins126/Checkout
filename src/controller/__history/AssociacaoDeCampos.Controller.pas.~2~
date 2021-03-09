@@ -1,0 +1,14 @@
+unit AssociacaoDeCampos.Controller;
+
+interface
+
+type
+  TAssociacao = class
+  private
+  public
+
+  end;
+
+implementation
+
+end.

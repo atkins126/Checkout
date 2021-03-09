@@ -1,0 +1,24 @@
+program Checkout;
+
+uses
+  Vcl.Forms,
+  Checkout.View in 'src\view\Checkout.View.pas' {FrmLogin},
+  Checkout.Menu.View in 'src\view\Checkout.Menu.View.pas' {FrmMenu},
+  Checkout.CadastroDeCargos.View in 'src\view\Checkout.CadastroDeCargos.View.pas' {FrmCadastroDeCargos},
+  model.Checkout in 'src\model\model.Checkout.pas' {modelCheckout: TDataModule},
+  Checkout.CadastroDeUsuarios.View in 'src\view\Checkout.CadastroDeUsuarios.View.pas' {FrmCadastroDeUsuarios},
+  Checkout.CadastroDeFuncionarios.View in 'src\view\Checkout.CadastroDeFuncionarios.View.pas' {FrmCadastroDeFuncionarios};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TFrmLogin, FrmLogin);
+  Application.CreateForm(TFrmMenu, FrmMenu);
+  Application.CreateForm(TFrmCadastroDeCargos, FrmCadastroDeCargos);
+  Application.CreateForm(TmodelCheckout, modelCheckout);
+  Application.CreateForm(TFrmCadastroDeUsuarios, FrmCadastroDeUsuarios);
+  Application.CreateForm(TFrmCadastroDeFuncionarios, FrmCadastroDeFuncionarios);
+  Application.Run;
+end.

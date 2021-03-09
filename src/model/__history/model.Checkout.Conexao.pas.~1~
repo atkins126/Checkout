@@ -1,0 +1,25 @@
+unit model.Checkout;
+
+interface
+
+uses
+  System.SysUtils, System.Classes;
+
+type
+  TmodelCheckout = class(TDataModule)
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  modelCheckout: TmodelCheckout;
+
+implementation
+
+{%CLASSGROUP 'Vcl.Controls.TControl'}
+
+{$R *.dfm}
+
+end.

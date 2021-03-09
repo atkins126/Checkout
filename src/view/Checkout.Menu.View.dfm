@@ -366,21 +366,23 @@ object FrmMenu: TFrmMenu
       object Fornecedores1: TMenuItem
         Caption = '-'
       end
-      object Produtos1: TMenuItem
+      object MI_USUARIOS: TMenuItem
         Caption = 'Usu'#225'rios'
-        OnClick = Produtos1Click
+        OnClick = MI_USUARIOSClick
       end
       object N5: TMenuItem
         Caption = '-'
       end
-      object Produtos2: TMenuItem
-        Caption = 'Fornecedores'
+      object MI_FUNCIONARIOS: TMenuItem
+        Caption = 'Funcion'#225'rios'
+        OnClick = MI_FUNCIONARIOSClick
       end
       object N6: TMenuItem
         Caption = '-'
       end
-      object Produt1: TMenuItem
-        Caption = 'Produt'
+      object MI_CARGOS: TMenuItem
+        Caption = 'Cargos'
+        OnClick = MI_CARGOSClick
       end
     end
     object N1: TMenuItem

@@ -12,7 +12,7 @@ type
     MainMenu1: TMainMenu;
     Cadastros1: TMenuItem;
     Fornecedores1: TMenuItem;
-    Produtos1: TMenuItem;
+    MI_USUARIOS: TMenuItem;
     N1: TMenuItem;
     Estoque1: TMenuItem;
     N2: TMenuItem;
@@ -22,11 +22,13 @@ type
     N4: TMenuItem;
     Sair1: TMenuItem;
     N5: TMenuItem;
-    Produtos2: TMenuItem;
+    MI_FUNCIONARIOS: TMenuItem;
     N6: TMenuItem;
-    Produt1: TMenuItem;
+    MI_CARGOS: TMenuItem;
     procedure Sair1Click(Sender: TObject);
-    procedure Produtos1Click(Sender: TObject);
+    procedure MI_USUARIOSClick(Sender: TObject);
+    procedure MI_FUNCIONARIOSClick(Sender: TObject);
+    procedure MI_CARGOSClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -40,9 +42,10 @@ implementation
 
 {$R *.dfm}
 
-uses Checkout.CadastroDeUsuarios.View;
+uses Checkout.CadastroDeUsuarios.View, Checkout.CadastroDeFuncionarios.View
+  , Checkout.CadastroDeCargos.View, model.Checkout.Conexao, Checkout.View;
 
-procedure TFrmMenu.Produtos1Click(Sender: TObject);
+procedure TFrmMenu.MI_USUARIOSClick(Sender: TObject);
 begin
   FrmCadastroDeUsuarios := TFrmCadastroDeUsuarios.Create(nil);
   try
@@ -50,6 +53,26 @@ begin
   finally
     FrmCadastroDeUsuarios.Free;
 
+  end;
+end;
+
+procedure TFrmMenu.MI_CARGOSClick(Sender: TObject);
+begin
+  FrmCadastroDeCargos := TFrmCadastroDeCargos.Create(nil);
+  try
+    FrmCadastroDeCargos.ShowModal;
+  finally
+    FrmCadastroDeCargos.Free;
+  end;
+end;
+
+procedure TFrmMenu.MI_FUNCIONARIOSClick(Sender: TObject);
+begin
+  FrmCadastroDeFuncionarios := TFrmCadastroDeFuncionarios.Create(nil);
+  try
+    FrmCadastroDeFuncionarios.ShowModal;
+  finally
+    FrmCadastroDeFuncionarios.Free;
   end;
 end;
 

@@ -29,8 +29,6 @@ object FrmLogin: TFrmLogin
     Color = clGradientActiveCaption
     ParentBackground = False
     TabOrder = 0
-    ExplicitWidth = 363
-    ExplicitHeight = 320
     object IMG_LOGIN: TImage
       Left = 0
       Top = 0

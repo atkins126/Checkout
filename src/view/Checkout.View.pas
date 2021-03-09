@@ -6,7 +6,7 @@ uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants,
   System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls,
-  Vcl.Imaging.pngimage, Vcl.Buttons;
+  Vcl.Imaging.pngimage, Vcl.Buttons, Checkout.Menu.View;
 
 type
   TFrmLogin = class(TForm)
@@ -30,8 +30,12 @@ implementation
 
 {$R *.dfm}
 
-uses Menu.View;
+uses Checkout.CadastroDeUsuarios.View;
+
+
 { TForm1 }
+
+
 
 procedure TFrmLogin.Login;
 begin
