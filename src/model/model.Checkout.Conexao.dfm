@@ -1,7 +1,7 @@
 object modelCheckout: TmodelCheckout
   OldCreateOrder = False
-  Height = 274
-  Width = 597
+  Height = 295
+  Width = 443
   object FCONEXAO: TFDConnection
     Params.Strings = (
       'User_Name=root'
@@ -9,15 +9,15 @@ object modelCheckout: TmodelCheckout
       'DriverID=MySQL')
     Connected = True
     LoginPrompt = False
-    Left = 24
-    Top = 16
+    Left = 8
+    Top = 8
   end
   object FMYSQLDRIVER: TFDPhysMySQLDriverLink
     VendorLib = 
       'C:\Users\jrose\Documents\Checkout em Delphi.MysQl\Checkout\src\m' +
       'odel\libmySQL.dll'
-    Left = 96
-    Top = 17
+    Left = 80
+    Top = 9
   end
   object FDT_CARGOS: TFDTable
     Active = True
@@ -26,11 +26,11 @@ object modelCheckout: TmodelCheckout
     UpdateOptions.UpdateTableName = 'checkout.cargos'
     TableName = 'checkout.cargos'
     Left = 24
-    Top = 96
+    Top = 111
     object FDT_CARGOSid: TFDAutoIncField
       FieldName = 'id'
       Origin = 'id'
-      ProviderFlags = [pfInWhere, pfInKey]
+      ReadOnly = True
     end
     object FDT_CARGOScargo: TStringField
       FieldName = 'cargo'
@@ -40,18 +40,18 @@ object modelCheckout: TmodelCheckout
     end
   end
   object FDQ_CARGOS: TFDQuery
-    Active = True
     Connection = FCONEXAO
     SQL.Strings = (
       'SELECT ID, '
       '            CARGO '
       'FROM CARGOS')
     Left = 24
-    Top = 160
+    Top = 168
   end
   object DS_CARGOS: TDataSource
-    DataSet = FDQ_CARGOS
+    AutoEdit = False
+    DataSet = FDT_CARGOS
     Left = 24
-    Top = 216
+    Top = 232
   end
 end

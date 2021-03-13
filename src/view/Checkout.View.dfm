@@ -16,6 +16,7 @@ object FrmLogin: TFrmLogin
   Position = poDesktopCenter
   Visible = True
   StyleElements = [seBorder]
+  OnKeyDown = FormKeyDown
   PixelsPerInch = 96
   TextHeight = 13
   object P_LOGIN: TPanel

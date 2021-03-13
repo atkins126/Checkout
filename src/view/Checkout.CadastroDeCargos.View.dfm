@@ -1,6 +1,7 @@
 object FrmCadastroDeCargos: TFrmCadastroDeCargos
   Left = 0
   Top = 0
+  BorderIcons = [biSystemMenu, biMinimize]
   ClientHeight = 278
   ClientWidth = 704
   Color = clBtnFace
@@ -22,8 +23,6 @@ object FrmCadastroDeCargos: TFrmCadastroDeCargos
     Align = alClient
     BevelOuter = bvNone
     TabOrder = 0
-    ExplicitWidth = 650
-    ExplicitHeight = 440
     object P_MENU: TPanel
       Left = 0
       Top = 0
@@ -32,7 +31,7 @@ object FrmCadastroDeCargos: TFrmCadastroDeCargos
       Align = alTop
       BevelOuter = bvNone
       TabOrder = 0
-      ExplicitWidth = 855
+      ExplicitTop = -6
       object Label1: TLabel
         Left = 16
         Top = 5
@@ -46,20 +45,14 @@ object FrmCadastroDeCargos: TFrmCadastroDeCargos
         Font.Style = []
         ParentFont = False
       end
-      object EDT_CARGO: TEdit
+      object DBE_NOME: TDBEdit
         Left = 16
         Top = 24
-        Width = 305
+        Width = 329
         Height = 21
         CharCase = ecUpperCase
-        Color = clBtnFace
-        Enabled = False
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Segoe UI'
-        Font.Style = []
-        ParentFont = False
+        DataField = 'cargo'
+        DataSource = modelCheckout.DS_CARGOS
         TabOrder = 0
       end
     end
@@ -71,8 +64,6 @@ object FrmCadastroDeCargos: TFrmCadastroDeCargos
       Align = alBottom
       BevelOuter = bvNone
       TabOrder = 1
-      ExplicitTop = 403
-      ExplicitWidth = 749
       object SB_NOVO: TSpeedButton
         Left = 56
         Top = 6
@@ -361,6 +352,7 @@ object FrmCadastroDeCargos: TFrmCadastroDeCargos
           FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
           FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00}
         ParentFont = False
+        OnClick = SB_EDITARClick
       end
       object SB_DELETAR: TSpeedButton
         Left = 449
@@ -468,9 +460,6 @@ object FrmCadastroDeCargos: TFrmCadastroDeCargos
       Align = alClient
       BevelOuter = bvNone
       TabOrder = 2
-      ExplicitTop = 113
-      ExplicitWidth = 650
-      ExplicitHeight = 284
       object DBG_CARGOS: TDBGrid
         Left = 0
         Top = 0
@@ -496,24 +485,14 @@ object FrmCadastroDeCargos: TFrmCadastroDeCargos
         Columns = <
           item
             Expanded = False
-            FieldName = 'ID'
+            FieldName = 'id'
             Title.Caption = 'C'#243'digo'
-            Title.Font.Charset = DEFAULT_CHARSET
-            Title.Font.Color = clWindowText
-            Title.Font.Height = -11
-            Title.Font.Name = 'Segoe UI'
-            Title.Font.Style = []
             Visible = True
           end
           item
             Expanded = False
-            FieldName = 'CARGO'
+            FieldName = 'cargo'
             Title.Caption = 'Cargo'
-            Title.Font.Charset = DEFAULT_CHARSET
-            Title.Font.Color = clWindowText
-            Title.Font.Height = -11
-            Title.Font.Name = 'Segoe UI'
-            Title.Font.Style = []
             Visible = True
           end>
       end

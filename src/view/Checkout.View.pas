@@ -16,6 +16,7 @@ type
     IMG_LOGIN: TImage;
     SB_LOGIN: TSpeedButton;
     procedure SB_LOGINClick(Sender: TObject);
+    procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
   private
     { Private declarations }
     procedure Login;
@@ -36,6 +37,12 @@ uses Checkout.CadastroDeUsuarios.View;
 { TForm1 }
 
 
+
+procedure TFrmLogin.FormKeyDown(Sender: TObject; var Key: Word;
+  Shift: TShiftState);
+begin
+//
+end;
 
 procedure TFrmLogin.Login;
 begin

@@ -1,0 +1,59 @@
+object modelCheckout: TmodelCheckout
+  OldCreateOrder = False
+  Height = 274
+  Width = 597
+  object FCONEXAO: TFDConnection
+    Params.Strings = (
+      'User_Name=root'
+      'Database=checkout'
+      'DriverID=MySQL')
+    Connected = True
+    LoginPrompt = False
+    Left = 24
+    Top = 16
+  end
+  object FMYSQLDRIVER: TFDPhysMySQLDriverLink
+    VendorLib = 
+      'C:\Users\jrose\Documents\Checkout em Delphi.MysQl\Checkout\src\m' +
+      'odel\libmySQL.dll'
+    Left = 96
+    Top = 17
+  end
+  object FDT_CARGOS: TFDTable
+    Active = True
+    IndexFieldNames = 'id'
+    Connection = FCONEXAO
+    UpdateOptions.UpdateTableName = 'checkout.cargos'
+    TableName = 'checkout.cargos'
+    Left = 24
+    Top = 111
+  end
+  object FDQ_CARGOS: TFDQuery
+    Active = True
+    Connection = FCONEXAO
+    SQL.Strings = (
+      'SELECT ID, '
+      '            CARGO '
+      'FROM CARGOS')
+    Left = 24
+    Top = 160
+    object FDQ_CARGOSID: TFDAutoIncField
+      FieldName = 'ID'
+      Origin = 'id'
+      ProviderFlags = [pfInWhere, pfInKey]
+      ReadOnly = True
+    end
+    object FDQ_CARGOSCARGO: TStringField
+      FieldName = 'CARGO'
+      Origin = 'cargo'
+      Required = True
+      Size = 30
+    end
+  end
+  object DS_CARGOS: TDataSource
+    AutoEdit = False
+    DataSet = FDQ_CARGOS
+    Left = 24
+    Top = 216
+  end
+end

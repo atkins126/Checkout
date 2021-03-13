@@ -38,7 +38,6 @@ implementation
 procedure TmodelCheckout.LocalizarDados;
 begin
   FDT_CARGOS.Close;
-  FDT_CARGOS.SQL.Add('SELECT ID, CARGO FROM CARGOS ORDER BY CARGO');
   FDT_CARGOS.Open;
 end;
 
