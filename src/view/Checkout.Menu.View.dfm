@@ -3,8 +3,8 @@ object FrmMenu: TFrmMenu
   Top = 0
   BorderIcons = [biSystemMenu]
   BorderStyle = bsSingle
-  ClientHeight = 260
-  ClientWidth = 502
+  ClientHeight = 375
+  ClientWidth = 591
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText

@@ -1,0 +1,30 @@
+unit AssociarCampos.Controller;
+
+interface
+
+Type
+  TAssociarCampos = class
+
+  public
+    procedure AssociarCamposFuncionarios;
+    procedure AssociarCamposCargos;
+  end;
+
+implementation
+
+{ TAssociarCampos }
+
+uses model.Checkout.Conexao, Checkout.CadastroCargos.View;
+
+procedure TAssociarCampos.AssociarCamposCargos;
+begin
+  modelCheckout.FDT_CARGOS.FieldByName('CARGO').Value :=
+    FrmCadastroDeCargos.EDT_NOME.Text;
+end;
+
+procedure TAssociarCampos.AssociarCamposFuncionarios;
+begin
+  //
+end;
+
+end.

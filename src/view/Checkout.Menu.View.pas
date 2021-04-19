@@ -3,9 +3,15 @@ unit Checkout.Menu.View;
 interface
 
 uses
-  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants,
-  System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Menus;
+  Winapi.Windows,
+  Winapi.Messages,
+  System.SysUtils,
+  System.Variants,
+  System.Classes,
+  Vcl.Graphics,
+  Vcl.Controls,
+  Vcl.Forms, Vcl.Dialogs,
+  Vcl.Menus;
 
 type
   TFrmMenu = class(TForm)
@@ -42,8 +48,8 @@ implementation
 
 {$R *.dfm}
 
-uses Checkout.CadastroDeUsuarios.View, Checkout.CadastroDeFuncionarios.View
-  , Checkout.CadastroDeCargos.View, model.Checkout.Conexao, Checkout.View;
+uses model.Checkout.Conexao, Checkout.CadastroUsuarios.View,
+  Checkout.CadastroFunvionarios.View, Checkout.CadastroCargos.View;
 
 procedure TFrmMenu.MI_USUARIOSClick(Sender: TObject);
 begin

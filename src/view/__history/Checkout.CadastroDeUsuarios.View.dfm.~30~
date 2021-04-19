@@ -1,0 +1,60 @@
+object FRM_CADASTRO_DE_USUARIOS: TFRM_CADASTRO_DE_USUARIOS
+  Left = 0
+  Top = 0
+  ClientHeight = 463
+  ClientWidth = 778
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object P_CONTAINER: TPanel
+    Left = 0
+    Top = 0
+    Width = 778
+    Height = 463
+    Align = alClient
+    BevelOuter = bvNone
+    TabOrder = 0
+    ExplicitLeft = -32
+    ExplicitTop = -48
+    ExplicitWidth = 722
+    ExplicitHeight = 439
+    object P_TOPO: TPanel
+      Left = 0
+      Top = 0
+      Width = 778
+      Height = 97
+      Align = alTop
+      BevelOuter = bvNone
+      TabOrder = 0
+      ExplicitWidth = 722
+    end
+    object P_RODAPE: TPanel
+      Left = 0
+      Top = 422
+      Width = 778
+      Height = 41
+      Align = alBottom
+      BevelOuter = bvNone
+      Caption = 'P_RODAPE'
+      TabOrder = 1
+      ExplicitLeft = 192
+      ExplicitTop = 112
+      ExplicitWidth = 185
+    end
+    object Panel3: TPanel
+      Left = 256
+      Top = 176
+      Width = 185
+      Height = 41
+      BevelOuter = bvNone
+      Caption = 'Panel3'
+      TabOrder = 2
+    end
+  end
+end

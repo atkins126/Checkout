@@ -58,6 +58,7 @@
         <UWP_DelphiLogo44>$(BDS)\bin\Artwork\Windows\UWP\delphi_UwpDefault_44.png</UWP_DelphiLogo44>
         <UWP_DelphiLogo150>$(BDS)\bin\Artwork\Windows\UWP\delphi_UwpDefault_150.png</UWP_DelphiLogo150>
         <SanitizedProjectName>Checkout</SanitizedProjectName>
+        <Custom_Styles>&quot;Aqua Graphite|VCLSTYLE|$(BDSCOMMONDIR)\Styles\AquaGraphite.vsf&quot;</Custom_Styles>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Base_Win32)'!=''">
         <DCC_UsePackage>DBXSqliteDriver;IndyIPCommon;RESTComponents;bindcompdbx;DBXInterBaseDriver;vcl;IndyIPServer;vclactnband;ZComponent;vclFireDAC;IndySystem;ZCore;tethering;svnui;dsnapcon;FireDACADSDriver;FireDACMSAccDriver;fmxFireDAC;vclimg;ZDbc;FireDAC;vcltouch;vcldb;bindcompfmx;svn;FireDACSqliteDriver;FireDACPgDriver;ibmonitor;inetdb;soaprtl;DbxCommonDriver;ibxpress;fmx;FireDACIBDriver;fmxdae;xmlrtl;soapmidas;ibxbindings;fmxobj;vclwinx;vclib;rtl;DbxClientDriver;CustomIPTransport;vcldsnap;dbexpress;IndyCore;vclx;ZParseSql;bindcomp;appanalytics;dsnap;ZPlain;FireDACCommon;IndyIPClient;bindcompvcl;RESTBackendComponents;VCLRESTComponents;soapserver;dbxcds;VclSmp;adortl;vclie;bindengine;DBXMySQLDriver;CloudService;dsnapxml;FireDACMySQLDriver;dbrtl;IndyProtocols;inetdbxpress;FireDACCommonODBC;FireDACCommonDriver;inet;fmxase;$(DCC_UsePackage)</DCC_UsePackage>
@@ -100,28 +101,30 @@
         <DelphiCompile Include="$(MainSource)">
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
-        <DCCReference Include="src\view\Checkout.View.pas">
+        <DCCReference Include="src\view\Checkout.Login.View.pas">
             <Form>FrmLogin</Form>
             <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="src\model\model.Checkout.Conexao.pas">
+            <Form>modelCheckout</Form>
+            <DesignClass>TDataModule</DesignClass>
         </DCCReference>
         <DCCReference Include="src\view\Checkout.Menu.View.pas">
             <Form>FrmMenu</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="src\view\Checkout.CadastroDeCargos.View.pas">
-            <Form>FrmCadastroDeCargos</Form>
-            <FormType>dfm</FormType>
-        </DCCReference>
-        <DCCReference Include="src\view\Checkout.CadastroDeUsuarios.View.pas">
+        <DCCReference Include="src\view\Checkout.CadastroUsuarios.View.pas">
             <Form>FrmCadastroDeUsuarios</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="src\view\Checkout.CadastroDeFuncionarios.View.pas">
+        <DCCReference Include="src\controller\AssociarCampos.Controller.pas"/>
+        <DCCReference Include="src\view\Checkout.CadastroFunvionarios.View.pas">
             <Form>FrmCadastroDeFuncionarios</Form>
+            <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="src\model\model.Checkout.Conexao.pas">
-            <Form>modelCheckout</Form>
-            <DesignClass>TDataModule</DesignClass>
+        <DCCReference Include="src\view\Checkout.CadastroCargos.View.pas">
+            <Form>FrmCadastroDeCargos</Form>
+            <FormType>dfm</FormType>
         </DCCReference>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>

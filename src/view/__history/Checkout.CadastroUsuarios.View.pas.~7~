@@ -1,0 +1,31 @@
+unit Checkout.CadastroUsuarios.View;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls;
+
+type
+  TFrmCadastroDeUsuarios = class(TForm)
+    P_TOPO: TPanel;
+    P_RODAPE: TPanel;
+    P_GRID: TPanel;
+    P_CONTAINER: TPanel;
+    EDT_BUSCAR_NOME: TEdit;
+    CB_CPF: TCheckBox;
+    CB_NOME: TCheckBox;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FrmCadastroDeUsuarios: TFrmCadastroDeUsuarios;
+
+implementation
+
+{$R *.dfm}
+
+end.

@@ -1,0 +1,23 @@
+unit AssociarCampos.Controller;
+
+interface
+Type
+TAssociarCampos = class
+
+ public
+ procedure AssociarCamposFuncionarios;
+
+end;
+
+implementation
+
+{ TAssociarCampos }
+
+uses model.Checkout.Conexao;
+
+procedure TAssociarCampos.AssociarCamposFuncionarios;
+begin
+//
+end;
+
+end.

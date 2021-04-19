@@ -1,0 +1,25 @@
+program Checkout;
+
+uses
+  Vcl.Forms,
+  Checkout.Login.View in 'src\view\Checkout.Login.View.pas' {FrmLogin},
+  model.Checkout.Conexao in 'src\model\model.Checkout.Conexao.pas' {modelCheckout: TDataModule},
+  Checkout.Menu.View in 'src\view\Checkout.Menu.View.pas' {FrmMenu},
+  Checkout.CadastroUsuarios.View in 'src\view\Checkout.CadastroUsuarios.View.pas' {FrmCadastroDeUsuarios},
+  Vcl.Themes,
+  Vcl.Styles,
+  AssociarCampos.Controller in 'src\controller\AssociarCampos.Controller.pas';
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  TStyleManager.TrySetStyle('Aqua Graphite');
+  Application.CreateForm(TFrmLogin, FrmLogin);
+  Application.CreateForm(TmodelCheckout, modelCheckout);
+  Application.CreateForm(TFrmMenu, FrmMenu);
+  Application.CreateForm(TFrmCadastroDeUsuarios, FrmCadastroDeUsuarios);
+  Application.Run;
+
+end.

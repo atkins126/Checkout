@@ -19,6 +19,10 @@ type
     DS_CARGOS: TDataSource;
     FDT_CARGOSid: TFDAutoIncField;
     FDT_CARGOScargo: TStringField;
+    DS_USUARIOS: TDataSource;
+    FDQ_USUARIOS: TFDQuery;
+    FDT_USUARIOS: TFDTable;
+    procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }
   public
@@ -34,6 +38,11 @@ implementation
 {%CLASSGROUP 'Vcl.Controls.TControl'}
 {$R *.dfm}
 { TmodelCheckout }
+
+procedure TmodelCheckout.DataModuleCreate(Sender: TObject);
+begin
+  FDT_CARGOS.Active := True;
+end;
 
 procedure TmodelCheckout.LocalizarDados;
 begin

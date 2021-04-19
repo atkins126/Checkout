@@ -1,0 +1,57 @@
+object FrmCadastroDeUsuarios: TFrmCadastroDeUsuarios
+  Left = 0
+  Top = 0
+  ClientHeight = 387
+  ClientWidth = 797
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object P_CONTAINER: TPanel
+    Left = 0
+    Top = 0
+    Width = 797
+    Height = 387
+    Align = alClient
+    BevelOuter = bvNone
+    TabOrder = 0
+    ExplicitLeft = 360
+    ExplicitTop = 48
+    ExplicitWidth = 185
+    ExplicitHeight = 41
+    object P_GRID: TPanel
+      Left = 0
+      Top = 113
+      Width = 797
+      Height = 223
+      Align = alClient
+      BevelOuter = bvNone
+      TabOrder = 0
+      ExplicitTop = 119
+      ExplicitHeight = 233
+    end
+    object P_RODAPE: TPanel
+      Left = 0
+      Top = 336
+      Width = 797
+      Height = 51
+      Align = alBottom
+      BevelOuter = bvNone
+      TabOrder = 1
+    end
+    object P_TOPO: TPanel
+      Left = 0
+      Top = 0
+      Width = 797
+      Height = 113
+      Align = alTop
+      BevelOuter = bvNone
+      TabOrder = 2
+    end
+  end
+end

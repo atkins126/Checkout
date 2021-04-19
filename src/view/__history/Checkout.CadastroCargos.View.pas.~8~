@@ -1,0 +1,36 @@
+unit Checkout.CadastroCargos.View;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Data.DB, Vcl.Grids,
+  Vcl.DBGrids, Vcl.Buttons, Vcl.StdCtrls;
+
+type
+  TFrmCadastroDeCargos = class(TForm)
+    P_CONTAINER: TPanel;
+    P_TOPO: TPanel;
+    P_RODAPE: TPanel;
+    P_GRID: TPanel;
+    DBG_CARGOS: TDBGrid;
+    EDT_NOME: TEdit;
+    Label1: TLabel;
+    SB_DELETAR: TSpeedButton;
+    SB_SALVAR: TSpeedButton;
+    SB_EDITAR: TSpeedButton;
+    SB_NOVO: TSpeedButton;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FrmCadastroDeCargos: TFrmCadastroDeCargos;
+
+implementation
+
+{$R *.dfm}
+
+end.
